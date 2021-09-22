@@ -15,8 +15,14 @@ public class MyMain {
     // goes until it calculates an answer less than 0.00000000001 
     // different from the value Math.E
     public static double calculateE() {
-        // REPLACE WITH YOUR CODE HERE
-        return -1.0;
+        double e_comp = 0;
+        int e_test = 1;
+        double e_value = Math.E;
+        while (e_value - e_comp >= 0.00000000001){
+            e_comp = (1/factorial(e_test));
+            e_test++;
+        }
+        return (Math.E);
     }
 
     // Calculates the square root iteratively, using the Babylonian method
